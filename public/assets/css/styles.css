@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --g-color: #475841;
+    --lg-color: #9FB8AD;
+    --b-color: #011627;
+    --r-color: #EFC7C2;
+    --y-color: #FFC800;
+}
