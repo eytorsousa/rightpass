@@ -31,25 +31,41 @@
             Right Pass: Sua Loja de Tênis, Roupas e Acessórios
         </div>
 
-        <div class="w-full h-fit flex items-center justify-center">
+        <div class="w-full h-fit flex relative items-center justify-center">
             <a href="#top"
             class="w-[260px] flex items-center justify-center overflow-hidden">
                 <img src="./assets/images/right_pass.png" alt="Main Logo - Right Pass"
                 class="w-full h-full">
             </a>
 
-            <div class="w-fit h-fit flex gap-[15px] items-center justify-center">
-                <a href="#"
-                class="w-[30px] h-[30px] bg-[url('./assets/images/icons/icon_profile.png')] hover:bg-[url('./assets/images/icons/icon_profile_s.png')] bg-cover ease-in-out duration-200">
+            <div class="w-fit h-fit flex gap-[15px] items-center justify-center absolute right-[100px]">
+                
+                <?php 
+                    session_start();
+                    if(isset($_SESSION['is_logged'])) {
+                        $link_profile = '../app/view/profile.php';
+                        $link_favorite = '';
+                        $link_bag = '';
+                    } else {
+                        $link_profile = '../app/view/login.php';
+                        $link_favorite = $link_profile;
+                        $link_bag = $link_profile;
+                    }
+                     
+                ?>
+
+                <a href='<?php echo $link_profile ?>'
+                    class="w-[30px] h-[30px] bg-[url('./assets/images/icons/icon_profile.png')] hover:bg-[url('./assets/images/icons/icon_profile_s.png')] bg-cover ease-in-out duration-200">
                 </a>
-                <a href="#"
+                <a href="<?php echo $link_favorite ?>"
                 class="w-[30px] h-[30px] bg-[url('./assets/images/icons/icon_favorite.png')] hover:bg-[url('./assets/images/icons/icon_favorite_s.png')] bg-cover ease-in-out duration-200">
                 </a>
-                <a href="#"
+                <a href="<?php echo $link_bag ?>"
                 class="w-[30px] h-[30px] bg-[url('./assets/images/icons/icon_bag.png')] hover:bg-[url('./assets/images/icons/icon_bag_s.png')] bg-cover ease-in-out duration-200">
                 </a>
             </div>
         </div>
+
         <nav class="w-full h-[15px] flex items-center justify-center text-xl font-medium gap-[20px]">
             <a href="#"
             class="text-lgcolor hover:text-gcolor ease-in-out duration-300">
