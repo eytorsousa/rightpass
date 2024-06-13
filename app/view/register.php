@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/icons/favicon.png" type="image/x-icon">
+    <script src="../../public/assets/js/register.js" defer></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -24,40 +25,45 @@
     </script>
     <title>Right Pass | Login</title>
 </head>
-<body class="w-full h-screen bg-gradient-to-r from-gcolor to-lgcolor flex flex-col items-center justify-center">
-    <h1>Dê o passo certo para se vestir melhor!</h1>
+<body class="w-full h-screen bg-lgcolor flex items-center justify-center">
     <main
-    class="mt-[20px] bg-white rounded-md p-[10px] flex flex-col gap-[20px] shadow-lg shadow-black-500/50">
+    class="bg-white rounded-md flex flex-col gap-[20px] h-[fit] items-center p-[20px] relative shadow-2xl w-[600px]">
+        <h1 class="font-bold text-2xl text-gcolor mb-[20px]">Dê o passo certo para se vestir melhor!</h1>
         <form action="#" method="POST" 
-        class="flex flex-col">
-        <label>
-                Nome
-                <input type="text" maxlength='30' name='form_name' placeholder='João' required>
+        class="flex flex-col w-[80%] gap-[20px] items-center">
+            <label class="flex flex-col w-[100%]">
+                Nome completo
+                <input type="text" maxlength='60' name='register_name' placeholder='João' required
+                class="border border-lgcolor h-[40px] rounded shadow-lg w-[100%] p-[10px] outline-gcolor">
             </label>
-            <label>
-                Sobrenome
-                <input type="text" maxlength='30' name='form_name_c' placeholder='Silva' required>
-            </label>
-            <label>
+            <label class="flex flex-col w-[100%]">
                 E-mail
-                <input type="text" maxlength='60' name='form_mail' placeholder='joao@silva.com' required>
+                <input type="text" maxlength='60' name='register_mail' placeholder='joao@silva.com' required
+                class="border border-lgcolor h-[40px] rounded shadow-lg w-[100%] p-[10px] outline-gcolor">
             </label>
-            <label>
-                Confirme seu e-mail
-                <input type="text" maxlength='60' name='form_mail_c' placeholder='joao@silva.com' required>
-            </label>
-            <label>
+            <label class="flex flex-col w-[100%] relative">
                 Senha                
-                <input type="password" maxlength='30' name='form_password' required>
+                <input type="password" maxlength='30' name='register_password' placeholder="******" required
+                class="border border-lgcolor h-[40px] rounded shadow-lg w-[100%] p-[10px] outline-gcolor">
+                <div class="absolute w-[25px] left-[410px] top-[30px] hover:cursor-pointer bg-white z-10">
+                    <img id="register_see_password" src="../../public/assets/images/icons/icon_eye.png" alt="Show password" class="w-full">
+                </div>
             </label>
-            <label>
+            <label class="flex flex-col w-[100%] relative">
                 Confirme sua senha   
-                <input type="password" maxlength='30' name='form_password_c' required>
+                <input type="password" maxlength='30' name='register_password_c' placeholder="******" required
+                class="border border-lgcolor h-[40px] rounded shadow-lg w-[100%] p-[10px] outline-gcolor">
+                <div class="absolute w-[25px] left-[410px] top-[30px] hover:cursor-pointer bg-white z-10">
+                    <img id="register_see_password2" src="../../public/assets/images/icons/icon_eye.png" alt="Show password" class="w-full">
+                </div>
             </label>
 
-            <button>Registre-se!</button>
+            <button class="border border-gcolor font-bold text-lg text-gcolor h-[50px] rounded shadow-xl w-[100%] hover:bg-gcolor hover:text-white ease-in-out duration-500">Registre-se!</button>
         </form>
+        <span class="font-semibold">
+            Já tem uma conta? 
+            <a href="../../public/index.php?login=open" class="text-lgcolor hover:text-gcolor ease-in-out duration-200">Conecte-se!</a>
+        </span>
     </main>
-    <span>Já tem uma conta? <a href="../../public/index.php">Conecte-se!</a></span>
 </body>
 </html>
