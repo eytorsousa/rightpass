@@ -1,0 +1,191 @@
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, var(--lg-color), var(--g-color))
+}
+
+.back {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 2%;
+    text-decoration: none;
+    top: 3%;
+    transition: all 150ms ease-in-out;
+}
+
+.back:hover {
+    transform: scale(1.08);
+}
+
+main {
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.555);
+    display: flex;
+    height: 600px;
+    width: 1000px;
+}
+
+.image_section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+}
+
+.image_section::after {
+    background-color: var(--lg-color);
+    border-radius: 10px 5px 5px 10px;
+    content: '';
+    height: 100%;
+    right: 0%;
+    position: absolute;
+    width: 300px;
+}
+
+.image_section img {
+    height: auto;
+    width: 650px;
+    z-index: 2;
+}
+
+.form_section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 120px 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+h1 {
+    background-image: linear-gradient(90deg, var(--lg-color), var(--g-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    text-align: center;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+}
+
+input {
+    border: solid 1px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.4);
+    height: 35px;
+    outline: 0;
+    padding: 10px;
+    transition: all 150ms ease;
+    width: 100%;
+}
+
+input:focus {
+    border: solid 2px var(--g-color);
+}
+
+.show_password {
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    width: 25px;
+}
+
+.show_password img {
+    width: 100%;
+    height: 100%;
+}
+
+.show_password:hover {
+    cursor: pointer;
+}
+
+.login {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+    background-color: var(--lg-color);
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+    height: 40px;
+    position: relative;
+    transition: all ease-in 150ms;
+    width: 100%;
+}
+
+.login:hover {
+    color: white;
+    cursor: pointer;
+    background-color: var(--g-color);
+}
+
+span {
+    display: flex;
+    font-size: 15px;
+    gap: 15px;
+}
+
+span a {
+    color: var(--g-color);
+    font-weight: 600;
+    transition: all 150ms ease-out;
+}
+
+span a:hover {
+    color: var(--lg-color);
+}
+
+@media (max-width: 1020px) {
+    .image_section {
+        display: none;
+    }
+
+    main {
+        width: 500px;
+    }
+
+    .form_section {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 520px) {
+    main {
+        width: 90%;
+    }
+
+    .form_section {
+        width: 90%;
+    }
+}

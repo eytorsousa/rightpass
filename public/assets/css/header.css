@@ -1,0 +1,107 @@
+header {
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    background-color: 100%;
+}
+
+.top {
+    align-items: center;
+    background-color: var(--r-color);
+    color: var(--b-color);
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    height: 35px;
+    justify-content: center;
+    width: 100%;
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 260px;
+}
+
+.util {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 5%;
+    width: 100px;
+}
+
+.login, .cart {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 30px;
+    transition: all 150ms ease-in-out;
+}
+
+.login:hover, .cart:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.logo img, .login img, .cart img {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+nav a {
+    color: var(--lg-color);
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: var(--g-color);
+}
+
+
+@media (max-width: 525px) {
+    .main  {
+        align-items: start;
+        height: 200px;
+    }
+
+    .util {
+        right: 38%;
+        bottom: 20%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

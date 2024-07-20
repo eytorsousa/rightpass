@@ -1,0 +1,113 @@
+footer {
+    background-color: #0b0c0cdc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+footer h1 {
+    font-size: 20px;
+}
+
+.nav {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+    margin: 30px 0 0 100px;
+    width: 100%;
+}
+
+.nav a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all ease-in 150ms;
+}
+
+.nav a:hover {
+    color: #475841;
+}
+
+hr {
+    margin: 30px auto;
+    width: 90%;
+}
+
+.more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.security {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 50px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0px 10px;
+}
+
+.methods {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 150px;
+}
+
+.method {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+}
+
+.method img, .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+@media (max-width: 520px) {
+    .nav {
+        margin: 30px 0 0 30px;
+    }
+
+    .more {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
