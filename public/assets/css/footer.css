@@ -1,5 +1,5 @@
 footer {
-    background-color: #0b0c0cdc;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     display: flex;
     flex-direction: column;
@@ -98,6 +98,7 @@ hr {
 .contact {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     width: 250px;
 }
 

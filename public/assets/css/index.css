@@ -1,0 +1,99 @@
+.marks .logos {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 0 20px;
+    width: fit-content;
+}
+
+.marks .logo {
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    width: 180px;
+}
+
+.marks .logo img {
+    height: 50%;
+    width: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+.marks .logo:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.inspirations, .marks {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.inspirations h1, .marks h1 {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 20px 0px 20px 12%;
+}
+
+.inspirations p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 0px 20px 12%;
+    padding-right: 40px;
+}
+
+.pictures {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: fit-content;
+}
+
+.picture {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 520px;
+    width: 350px;
+}
+
+.picture img {
+    filter: brightness(55%);
+    transition: all 1s ease-out;
+    width: 100%;
+}
+
+.picture::after {
+    content: '';
+    background-image: url('https://github.com/eytorsousa/rp-images/raw/main/images/icons/icon_instagram.png');
+    background-size: cover;
+    height: 20px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    width: 20px;
+    z-index: 2;
+}
+
+.picture img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+

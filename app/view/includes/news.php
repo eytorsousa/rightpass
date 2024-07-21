@@ -4,10 +4,10 @@
         <p>Receba com exclusividade a nossa newsletter com tendências, promoções e muito mais!</p>
     </div>
     <div class="mail">
-        <form action="">
+        <form action="" method="">
             <label>
                 SEU E-MAIL
-                <input type="email">
+                <input type="email" placeholder="Seu melhor e-mail!" required>
             </label>    
             <button>CADASTRAR</button>
         </form>
