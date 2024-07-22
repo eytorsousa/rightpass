@@ -1,3 +1,70 @@
+.buy {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.buy .discount, .buy .store {
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    filter: brightness(70%);
+    height: 650px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 850ms ease-in-out;
+    width: 49.5%;
+}
+
+.buy .discount {
+    background-image: url('https://github.com/eytorsousa/rp-images/raw/main/images/buy.jpg');
+}
+
+.buy .store {
+    background-image: url('https://github.com/eytorsousa/rp-images/raw/main/images/buy2.jpg');
+}
+
+.buy .discount:hover, .buy .store:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    filter: brightness(100%);
+}
+
+.buy .discount::after, .buy .store::after {
+    bottom: 5%;
+    content: 'QUERO →';
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    right: 3%;
+    text-shadow: 0px 3px 6px black;
+}
+
+.buy .discount::before, .buy .store::before {
+    bottom: 10%;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    left: 3%;
+    position: absolute;
+    text-shadow: 0px 3px 6px black;
+}
+
+.buy .discount::before {
+    content: '5% OFF (PIX)';
+}
+
+.buy .store::before {
+    content: 'COMPRE NO SITE E RETIRE NA LOJA!';
+    width: 80%;
+}
+
 .marks .logos {
     align-items: center;
     display: flex;
@@ -31,6 +98,90 @@
     background-color: black;
 }
 
+.special {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.special h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 50px 0px 50px 350px;
+}
+
+.special .banner {
+    align-items: center;
+    align-self: center;
+    background-image: url('https://github.com/eytorsousa/rp-images/raw/main/images/banner1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.special .banner::after {
+    bottom: 10%;
+    content: 'VER PRODUTOS →';
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    right: 5%;
+    text-shadow: 0px 3px 12px black;
+}
+
+.location {
+    align-items: center;
+    background-color: #eceded;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 125px 0px;
+    overflow: hidden;
+    padding: 75px 0px;
+    width: 100%;
+}
+
+.location .text {
+    display: flex;
+    align-items: start;
+}
+
+.location .text h1 {
+    font-size: 45px;
+    font-weight: 900;
+    padding: 0;
+    width: fit-content;
+}
+
+.location .text p {
+    font-size: 20px;
+    width: 600px;
+}
+
+.location a {
+    background-color: var(--lg-color);
+    border-radius: 1px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+    color: var(--b-color);
+    font-size: 20px;
+    font-weight: 800;
+    padding: 35px;
+    position: relative;
+    text-decoration: none;
+    transition: all 200ms ease-in;
+}
+
+.location a:hover {
+    background-color: var(--g-color);
+    color: white;
+}
+
 .inspirations, .marks {
     display: flex;
     flex-direction: column;
@@ -39,9 +190,11 @@
 }
 
 .inspirations h1, .marks h1 {
+    color: black;
     font-size: 45px;
     font-weight: 900;
     margin: 20px 0px 20px 12%;
+    width: fit-content;
 }
 
 .inspirations p {

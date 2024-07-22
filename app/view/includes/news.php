@@ -7,7 +7,7 @@
         <form action="" method="">
             <label>
                 SEU E-MAIL
-                <input type="email" placeholder="Seu melhor e-mail!" required>
+                <input type="email" placeholder="Seu melhor e-mail" required>
             </label>    
             <button>CADASTRAR</button>
         </form>

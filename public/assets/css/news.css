@@ -20,6 +20,7 @@
 .text h1 {
     color: rgba(0, 0, 0, 0.8);
     flex-wrap: wrap;
+    font-weight: 900;
     padding: 10px;
     width: fit-content;
 }
