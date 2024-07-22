@@ -28,6 +28,21 @@
     ?>
     <?php include_once('../app/view/includes/header.php'); ?>
 
+    <section class="outfit">
+        <h1>O MELHOR OUTFIT<br> VOCÊ FAZ AQUI!</h1>
+        <div class="blocks">
+            <a href="#" class="single">
+            </a>
+            <div class="multi">
+                <a href="#" class="top"></a>
+                <div class="bottom">
+                    <a href="#" class="first"></a>
+                    <a href="#" class="second"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="marks">
         <h1>Nossas marcas</h1>
         <div class="logos">
@@ -59,6 +74,14 @@
         <h1>Especial para você!</h1>
         <a href="#" class="banner">
         </a>
+    </section>
+
+    <section class="read">
+        <h1>Explore o estilo streetwear</h1>
+        <p>Bem-vindo ao epicentro do estilo urbano, onde cada passo reflete sua personalidade única. Aqui você encontra mais do que simples calçados; oferecemos uma experiência de moda que celebra a autenticidade e a criatividade.</p>
+        <br>
+        <p>Descubra uma coleção diversificada dos tênis mais desejados do momento, cuidadosamente selecionados para refletir as últimas tendências urbanas. Desde os clássicos atemporais até as inovações mais arrojadas, cada par é uma obra de arte que combina conforto com um design marcante.</p>
+    
     </section>
 
     <section class="buy">

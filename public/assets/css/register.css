@@ -46,10 +46,10 @@ main {
 
 .image_section::after {
     background-color: var(--g-color);
-    border-radius: 5px 10px 10px 5px;
+    border-radius: 100%;
     content: '';
-    height: 100%;
-    left: 0%;
+    height: 300px;
+    left: 20%;
     position: absolute;
     width: 300px;
 }

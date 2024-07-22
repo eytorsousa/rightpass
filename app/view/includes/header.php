@@ -25,6 +25,9 @@
             <a href="#" class="acessorios"> 
                 ACESSÓRIOS
             </a>
+            <a href="#" class="roupas"> 
+                ROUPAS
+            </a>
             <a href="#" class="marcas"> 
                 MARCAS
             </a>

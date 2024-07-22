@@ -44,18 +44,18 @@ main {
 }
 
 .image_section::after {
-    background-color: var(--lg-color);
-    border-radius: 10px 5px 5px 10px;
+    background-color: var(--g-color);
+    border-radius: 100%;
     content: '';
-    height: 100%;
-    right: 0%;
+    height: 300px;
+    right: 20%;
     position: absolute;
     width: 300px;
 }
 
 .image_section img {
     height: auto;
-    width: 650px;
+    width: 450px;
     z-index: 2;
 }
 
