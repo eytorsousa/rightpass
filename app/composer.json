@@ -1,0 +1,32 @@
+{
+    "name": "tucandeiros/rightpass",
+    "description": "Composer destinado ao rightpass",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Thiago Morales",
+            "email": "t@g.com"
+        },
+        {
+            "name": "Eytor Lima",
+            "email": "e@g.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor" 
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/factory/Connect.php"
+        ]
+    },
+    "require": {
+        "coffeecode/datalayer": "^2.0",
+        "coffeecode/router": "^2.0"
+    }
+}
+
