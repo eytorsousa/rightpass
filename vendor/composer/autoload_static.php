@@ -7,26 +7,22 @@ namespace Composer\Autoload;
 class ComposerStaticInitef24781dc2c2d6cdd07db54fbcb83770
 {
     public static $files = array (
-        '2f251d7908f242078f3f41e3502c3990' => __DIR__ . '/../..' . '/app/controller/Connect.php',
+        'b1442b1611c1b06bd43c2c748dc8175b' => __DIR__ . '/../..' . '/app/factory/Connect.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'S' => 
-        array (
-            'Source\\' => 7,
-        ),
         'C' => 
         array (
             'CoffeeCode\\Router\\' => 18,
             'CoffeeCode\\DataLayer\\' => 21,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Source\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'CoffeeCode\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/router/src',
@@ -34,6 +30,10 @@ class ComposerStaticInitef24781dc2c2d6cdd07db54fbcb83770
         'CoffeeCode\\DataLayer\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/datalayer/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 

@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    '2f251d7908f242078f3f41e3502c3990' => $baseDir . '/app/controller/Connect.php',
+    'b1442b1611c1b06bd43c2c748dc8175b' => $baseDir . '/app/factory/Connect.php',
 );
